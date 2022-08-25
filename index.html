@@ -24,14 +24,37 @@
 </head>
 <body>
 
-    {% include "nunjucks/header.html" %}
+  <header class="header">
+    <div class="header-container">
+      <div class="title">
+        <h2>
+          Razor
+        </h2>
+      </div>
+          
+        <div class="menu-icon">
+          <button type="button" class="btn btn-navbar"
+            data-toggle="collapse" data-target=".nav-collapse">
+          <div class="menu">
+            <h3>Menu</h3>
+              <div class="spans">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </button> 
+        </div>
+    </div>
+  </header>
+    <!-- {% include "nunjucks/header.html" %} -->
   
 
 
-  <section class="future mt-70 mb-70">
+  <section class="future mt-150 mb-70">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
           <div class="future-left">
             <h1>Future <br>Aiming at</h1>
             <p>
@@ -44,18 +67,20 @@
           </div>
         </div>
         
-        <div class="col-6 ">
-          <img src="img/omk-Uo2W75MB8uU-unsplash.png" alt="">
+        <div class="col-lg-6 col-md-12 order">
+          <div class="img">
+            <img src="img/omk-Uo2W75MB8uU-unsplash.png" alt="">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="features ml-120 mt-80">
+  <section class="features mt-80">
     <div class="container">
       <div class="row">
         <div class="col-12">
-         <div class="features-top">
+         <div class="sectionpack">
           <h3>FEATURES</h3>
           <h2>Innovative <br>digital products.</h2>
           <p>
@@ -65,25 +90,10 @@
          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-3">
-          <img src="img/Vector.svg" alt="">
-          <h3>Visual Design</h3>
-            <p>We build and activate brands through cultural insight,
-              strategic visionacross every element.</p>
-              <div class="features-link">
-                <a href="">Find Out More </a>
-                <a href="">
-                <img src="img/Arrow_Circle_Right.svg" 
-                alt="">
-              </a>
-            </div>
-          </div>
-
-        
-
-          <div class="col-3">
+ 
+      <div class="features-visual">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
             <img src="img/Vector.svg" alt="">
             <h3>Visual Design</h3>
               <p>We build and activate brands through cultural insight,
@@ -95,11 +105,12 @@
                   alt="">
                 </a>
               </div>
-            </div>
-        
-
-            <div class="col-3">
-              <img src="img/Vector.svg" alt="">
+          </div>
+  
+          
+  
+            <div class="col-lg-3 col-md-6">
+              <img src="img/Vector-2.svg" alt="">
               <h3>Visual Design</h3>
                 <p>We build and activate brands through cultural insight,
                   strategic visionacross every element.</p>
@@ -110,11 +121,26 @@
                     alt="">
                   </a>
                 </div>
-              </div>
+            </div>
+          
+  
+            <div class="col-lg-3 col-md-6">
+              <img src="img/Vector-3.svg" alt="">
+              <h3>Visual Design</h3>
+                <p>We build and activate brands through cultural insight,
+                  strategic visionacross every element.</p>
+                  <div class="features-link">
+                    <a href="">Find Out More </a>
+                    <a href="">
+                    <img src="img/Arrow_Circle_Right.svg" 
+                    alt="">
+                  </a>
+                </div>
+            </div>
         
 
-              <div class="col-3">
-                <img src="img/Vector.svg" alt="">
+              <div class="col-lg-3 col-md-6">
+                <img src="img/Vector-4.svg" alt="">
                 <h3>Visual Design</h3>
                   <p>We build and activate brands through cultural insight,
                     strategic visionacross every element.</p>
@@ -125,8 +151,9 @@
                       alt="">
                     </a>
                   </div>
-                </div>
+              </div>
         
+          </div>
         </div>
 
       </div>
@@ -145,18 +172,21 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h3>PORTFOLIO</h3>
-          <h2>Headless<br> Webshops With<br> Shopify Plus</h2>
-          <p>We build and activate brands through cultural insight, 
+          <div class="sectionpack">
+            <h3>PORTFOLIO</h3>
+            <h2>Headless<br> Webshops With<br> Shopify Plus</h2>
+            <p>We build and activate brands through cultural insight, 
             strategic vision, and<br> the power of emotion across every element
             of its expression.</p>
+          </div>
           <button class="portfolio-btn">Learn More</button>
         </div>
       </div>
-      <div class="row">
-       <div class="portfolio-photo mt-60">
+      <div class="portfolio-photo mt-60"></div>
+        <div class="row">
+       
 
-        <div class="col-4">
+        <div class="col-md-12 col-lg-4">
           <div class="portfolio-photo-card">
             <img src="img/Rectangle 499.png" alt="">
             <div class="portfolio-photo-card-text">
@@ -166,7 +196,7 @@
           </div>
         </div>
 
-       <div class="col-4">
+       <div class="col-md-12 col-lg-4">
           <div class="portfolio-photo-card">
             <img src="img/Rectangle 499.png" alt="">
             <div class="portfolio-photo-card-text">
@@ -176,7 +206,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-12 col-lg-4">
           <div class="portfolio-photo-card">
             <img src="img/Rectangle 499.png" alt="">
             <div class="portfolio-photo-card-text">
@@ -197,13 +227,15 @@
     <div class="container">
       <div class="footer-cont">
         <div class="row">
-        <div class="col-5">
-          <h3>Razor</h3>
-          <p>You want to succeed, surround yourself with the right kind of people 
+        <div class="col-sm-12 col-md-5">
+          <div class="footer-cont-title">
+            <h3>Razor</h3>
+            <p>You want to succeed, surround yourself with the right kind of people 
             who will support and encourage you all the</p>
+          </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-sm-4 col-md-2">
           <div class="footer-links">
             <h4>Links</h4>
             <div class="link">
@@ -215,7 +247,7 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-sm-4 col-md-2">
          <div class="footer-follow">
           <h4>Follow Us</h4>
           <div class="link">
@@ -227,7 +259,7 @@
          </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-sm-4 col-md-3">
           <div class="footer-news">
             <h4>Newsletter</h4>
             
@@ -252,7 +284,6 @@
         </div>
       </div>
     </div>
-    
   </footer>
 
 </body>

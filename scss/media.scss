@@ -1,0 +1,242 @@
+@media (max-width: 992px) {
+    body {
+        text-align: center;
+    }
+
+    .sectionpack {
+        // display: flex;
+        text-align: center;
+        
+        margin-bottom: 40px;
+    
+        h3 {
+            // font-size: 14px;
+            letter-spacing: 0.05em;
+            color: #20202099;
+        }
+        
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            color: #202020;
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            color: #202020B2;
+            line-height: 160%;
+        }
+    }
+
+    .future {
+        // overflow: hidden;
+        // position: relative;
+
+        .order {
+            order: -1;
+            height: 50%;
+        }
+        &-left {
+            display: flex;            
+            justify-content: center !important;
+            text-align: center;
+
+            h1 {
+                font-size: 70px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            p {
+                margin-bottom: 0;
+                padding-bottom: 25px;
+                padding-right: 0;
+            }
+        }
+
+        &-btn {
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+
+        }
+        .img {
+            // position: absolute;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0 0 40px 0;
+           order: -1;
+           height: 70%;
+           
+            img {
+                height: 400px;
+                object-fit: cover;
+                border-radius: 30px;
+                margin: 10px;
+                
+            }
+        }
+       
+    }
+
+    .portfolio {
+
+       
+
+        &-photo-card {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            height: 100%;
+            width: 70%;
+            margin: 0;
+            padding: 0;
+            margin-left: 15%;
+            
+            &-text {
+                line-height: 250%;
+                padding: 0 0 8px 8px;
+                left: 2.5rem;
+                bottom: 2.5rem;
+
+                &:after {
+                    // width: 1.75rem;
+                    bottom: 35%;
+                    left: 100%;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    margin: 0;
+                }
+                
+                p {
+                    font-size: 14px;
+                    margin: 0;
+                }
+            }
+
+            img {
+                overflow: hidden;
+                // object-fit: cover/;
+                margin: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .features {
+
+        
+
+        margin-left: 0;
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 40px 0;
+           
+        }
+
+        &-visual {
+            margin-top: 25px;
+        }
+    }
+
+    .video {
+        margin-top: 70px;
+    }
+
+    .portfolio {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    footer {
+        text-align: left;
+
+        p {
+            font-size: 14px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 14px !important;
+        }
+
+        .foorer {
+            &-cont {
+                padding-bottom: 40px;
+            }
+
+            &-down {
+               
+            }
+        }
+        .email-cont {
+            button {
+                top: 10%;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+                
+            }
+            input {
+                padding-left: 8px;
+                font-size: 12px;
+                height: 34px;
+            }
+        }
+    }
+ 
+}
+
+@media (max-width: 768px) {
+    header {
+        .container {
+            
+        }
+    }
+    .footer-cont {
+       &-title {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h3 {
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+       }
+    }
+
+    .portfolio {
+        &-photo {
+            &-card {
+                &-text {
+                   left: 1.5rem; 
+                   bottom: 1.5rem;
+                   &::after {
+                    bottom: 1.6rem;
+                   }
+                }
+            }
+        }
+    }
+}
